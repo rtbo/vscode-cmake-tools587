@@ -1,6 +1,12 @@
-#include "square.h"
+#include <ph/Literals.hpp>
+#include <iostream>
 
 int main()
 {
-    return lib::square(2) == 4 ? 0 : 1;
+    using namespace ph::literals;
+
+    const auto amount = 1_m3 / 1_ml;
+
+    std::cout << "There are " << amount << " milliliters in a cubic meter!" << std::endl;
+    return 0;
 }

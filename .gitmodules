@@ -1,0 +1,3 @@
+[submodule "Physics"]
+	path = Physics
+	url = git@github.com:rtbo/Physics.git
